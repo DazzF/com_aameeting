@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset
+		addrulepath="/administrator/components/com_aameetinglist/models/rules"
+		addfieldpath="/administrator/components/com_aameetinglist/models/fields"
+		name="global_config"
+		label="COM_AAMEETINGLIST_CONFIG_GLOBAL_LABEL"
+		description="COM_AAMEETINGLIST_CONFIG_GLOBAL_DESC">
+		<field
+			name="check_in"
+			type="list"
+			default="0"
+			label="COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_LABEL"
+			description="COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_DESC">
+			<option
+				value="-5 hours">COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_OPTION_ONE</option>
+			<option
+				value="-12 hours">COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_OPTION_TWO</option>
+			<option
+				value="-1 day">COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_OPTION_THREE</option>
+			<option
+				value="-2 day">COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_OPTION_FOUR</option>
+			<option
+				value="-1 week">COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_OPTION_FIVE</option>
+			<option
+				value="0">COM_AAMEETINGLIST_CONFIG_CHECK_TIMER_OPTION_SIX</option>
+		</field>
+		<field type="spacer" name="spacerAuthor" hr="true" />
+		<field
+			name="save_history"
+			type="radio"
+			class="btn-group btn-group-yesno"
+			default="1"
+			label="JGLOBAL_SAVE_HISTORY_OPTIONS_LABEL"
+			description="JGLOBAL_SAVE_HISTORY_OPTIONS_DESC"
+			>
+			<option value="1">JYES</option>
+			<option value="0">JNO</option>
+		</field>
+		<field
+			name="history_limit"
+			type="text"
+			filter="integer"
+			label="JGLOBAL_HISTORY_LIMIT_OPTIONS_LABEL"
+			description="JGLOBAL_HISTORY_LIMIT_OPTIONS_DESC"
+			default="10"
+		/>
+		<field type="spacer" name="spacerHistory" hr="true" />
+
+		<!-- Aameetingviewlist Field. Type: List. (joomla) -->
+		<field
+			type="list"
+			name="aameetingviewlist"
+			label="COM_AAMEETINGLIST_CONFIG_AAMEETINGVIEWLIST_LABEL"
+			class="list_class"
+			multiple="false"
+			useglobal="false"
+			default="0">
+			<!-- Option Set. -->
+			<option value="0">
+				COM_AAMEETINGLIST_CONFIG_TABLE_VIEW</option>
+			<option value="1">
+				COM_AAMEETINGLIST_CONFIG_CARDS_SIMPLE</option>
+			<option value="2">
+				COM_AAMEETINGLIST_CONFIG_CARDS_GROUP_ONE</option>
+			<option value="3">
+				COM_AAMEETINGLIST_CONFIG_CARDS_GROUP_TWO</option>
+		</field>
+		<!-- Aameetingfrontendviewheading Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingfrontendviewheading"
+			label="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWHEADING_LABEL"
+			size="1024"
+			maxlength="1024"
+			default="Enter the front end view heading"
+			description="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWHEADING_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="false"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWHEADING_MESSAGE"
+			hint="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWHEADING_HINT"
+			autocomplete="on"
+		/>
+		<!-- Aameetingfrontendviewmessage Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingfrontendviewmessage"
+			label="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWMESSAGE_LABEL"
+			size="4096"
+			maxlength="4096"
+			default="Front end view message"
+			description="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWMESSAGE_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="false"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWMESSAGE_MESSAGE"
+			hint="COM_AAMEETINGLIST_CONFIG_AAMEETINGFRONTENDVIEWMESSAGE_HINT"
+			autocomplete="on"
+		/>
+		<field name="autorTitle"
+			type="spacer"
+			label="COM_AAMEETINGLIST_CONFIG_AUTHOR"
+		/>
+		<field name="autorName"
+			type="text"
+			label="COM_AAMEETINGLIST_CONFIG_AUTHOR_NAME_LABEL"
+			description="COM_AAMEETINGLIST_CONFIG_AUTHOR_NAME_DESC"
+			size="60"
+			default="Darren Frewin"
+			readonly="true"
+			class="readonly"
+		/>
+		<field name="autorEmail"
+			type="email"
+			label="COM_AAMEETINGLIST_CONFIG_AUTHOR_EMAIL_LABEL"
+			description="COM_AAMEETINGLIST_CONFIG_AUTHOR_EMAIL_DESC"
+			size="60"
+			default="frewind@hotmail.com"
+			readonly="true"
+			class="readonly"
+		/>
+	</fieldset>
+	<fieldset
+		name="permissions"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		description="JCONFIG_PERMISSIONS_DESC">
+		<field
+			name="rules"
+			type="rules"
+			label="JCONFIG_PERMISSIONS_LABEL"
+			class="inputbox"
+			validate="rules"
+			filter="rules"
+			component="com_aameetinglist"
+			section="component"
+		/>
+	</fieldset>
+</config>

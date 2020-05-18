@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<access component="com_aameetinglist">
+	<section name="component">
+		<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+		<action name="core.options" title="JACTION_OPTIONS" description="JACTION_OPTIONS_COMPONENT_DESC" />
+		<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		<action name="core.export" title="COM_AAMEETINGLIST_EXPORT_DATA" description="COM_AAMEETINGLIST_EXPORT_DATA_DESC" />
+		<action name="core.import" title="COM_AAMEETINGLIST_IMPORT_DATA" description="COM_AAMEETINGLIST_IMPORT_DATA_DESC" />
+		<action name="core.batch" title="COM_AAMEETINGLIST_USE_BATCH" description="COM_AAMEETINGLIST_USE_BATCH_DESC" />
+		<action name="core.version" title="COM_AAMEETINGLIST_EDIT_VERSIONS" description="COM_AAMEETINGLIST_EDIT_VERSIONS_DESC" />
+		<action name="core.create" title="JACTION_CREATE" description="JACTION_CREATE_COMPONENT_DESC" />
+		<action name="core.delete" title="JACTION_DELETE" description="JACTION_DELETE_COMPONENT_DESC" />
+		<action name="core.edit" title="JACTION_EDIT" description="JACTION_EDIT_COMPONENT_DESC" />
+		<action name="core.edit.state" title="JACTION_EDITSTATE" description="JACTION_ACCESS_EDITSTATE_DESC" />
+		<action name="core.edit.own" title="JACTION_EDITOWN" description="JACTION_EDITOWN_COMPONENT_DESC" />
+		<action name="core.edit.created_by" title="COM_AAMEETINGLIST_EDIT_CREATED_BY" description="COM_AAMEETINGLIST_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_AAMEETINGLIST_EDIT_CREATED_DATE" description="COM_AAMEETINGLIST_EDIT_CREATED_DATE_DESC" />
+		<action name="aameeting.access" title="COM_AAMEETINGLIST_AAMEETINGS_ACCESS" description="COM_AAMEETINGLIST_AAMEETINGS_ACCESS_DESC" />
+		<action name="aameeting.batch" title="COM_AAMEETINGLIST_AAMEETINGS_BATCH_USE" description="COM_AAMEETINGLIST_AAMEETINGS_BATCH_USE_DESC" />
+		<action name="aameeting.dashboard_add" title="COM_AAMEETINGLIST_AAMEETINGS_DASHBOARD_ADD" description="COM_AAMEETINGLIST_AAMEETINGS_DASHBOARD_ADD_DESC" />
+		<action name="aameeting.dashboard_list" title="COM_AAMEETINGLIST_AAMEETINGS_DASHBOARD_LIST" description="COM_AAMEETINGLIST_AAMEETINGS_DASHBOARD_LIST_DESC" />
+		<action name="aameeting.edit.aameetingcode" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCODE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCODE_DESC" />
+		<action name="aameeting.edit.aameetingcontact" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACT" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACT_DESC" />
+		<action name="aameeting.edit.aameetingcontactphone" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACTPHONE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACTPHONE_DESC" />
+		<action name="aameeting.edit.aameetingecontactemail" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGECONTACTEMAIL" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGECONTACTEMAIL_DESC" />
+		<action name="aameeting.edit.aameetingname" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNAME" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNAME_DESC" />
+		<action name="aameeting.edit.aameetingnight" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNIGHT" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNIGHT_DESC" />
+		<action name="aameeting.edit.aameetingpasscode" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGPASSCODE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGPASSCODE_DESC" />
+		<action name="aameeting.edit.aameetingtime" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGTIME" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGTIME_DESC" />
+		<action name="aameeting.version" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_VERSION" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_VERSION_DESC" />
+		<action name="aameeting.export" title="COM_AAMEETINGLIST_AAMEETINGS_EXPORT" description="COM_AAMEETINGLIST_AAMEETINGS_EXPORT_DESC" />
+		<action name="aameeting.import" title="COM_AAMEETINGLIST_AAMEETINGS_IMPORT" description="COM_AAMEETINGLIST_AAMEETINGS_IMPORT_DESC" />
+		<action name="aameeting.submenu" title="COM_AAMEETINGLIST_AAMEETINGS_SUBMENU" description="COM_AAMEETINGLIST_AAMEETINGS_SUBMENU_DESC" />
+		<action name="aameeting.view.aameetingcode" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCODE" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCODE_DESC" />
+		<action name="aameeting.view.aameetingcontact" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACT" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACT_DESC" />
+		<action name="aameeting.view.aameetingcontactphone" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACTPHONE" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACTPHONE_DESC" />
+		<action name="aameeting.view.aameetingecontactemail" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGECONTACTEMAIL" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGECONTACTEMAIL_DESC" />
+		<action name="aameeting.view.aameetingname" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNAME" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNAME_DESC" />
+		<action name="aameeting.view.aameetingnight" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNIGHT" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNIGHT_DESC" />
+		<action name="aameeting.view.aameetingpasscode" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGPASSCODE" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGPASSCODE_DESC" />
+		<action name="aameeting.view.aameetingtime" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGTIME" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGTIME_DESC" />
+	</section>
+	<section name="aameeting">
+		<action name="core.edit" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_DESC" />
+		<action name="core.edit.own" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_OWN" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_OWN_DESC" />
+		<action name="core.edit.state" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_STATE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_STATE_DESC" />
+		<action name="core.edit.access" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_ACCESS" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_ACCESS_DESC" />
+		<action name="core.edit.created_by" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_CREATED_BY" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_CREATED_BY_DESC" />
+		<action name="core.edit.created" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_CREATED_DATE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_CREATED_DATE_DESC" />
+		<action name="core.create" title="COM_AAMEETINGLIST_AAMEETINGS_CREATE" description="COM_AAMEETINGLIST_AAMEETINGS_CREATE_DESC" />
+		<action name="core.delete" title="COM_AAMEETINGLIST_AAMEETINGS_DELETE" description="COM_AAMEETINGLIST_AAMEETINGS_DELETE_DESC" />
+		<action name="aameeting.edit.aameetingname" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNAME" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNAME_DESC" />
+		<action name="aameeting.view.aameetingname" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNAME" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNAME_DESC" />
+		<action name="aameeting.edit.aameetingtime" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGTIME" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGTIME_DESC" />
+		<action name="aameeting.view.aameetingtime" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGTIME" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGTIME_DESC" />
+		<action name="aameeting.edit.aameetingnight" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNIGHT" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGNIGHT_DESC" />
+		<action name="aameeting.view.aameetingnight" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNIGHT" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGNIGHT_DESC" />
+		<action name="aameeting.edit.aameetingcode" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCODE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCODE_DESC" />
+		<action name="aameeting.view.aameetingcode" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCODE" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCODE_DESC" />
+		<action name="aameeting.edit.aameetingpasscode" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGPASSCODE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGPASSCODE_DESC" />
+		<action name="aameeting.view.aameetingpasscode" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGPASSCODE" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGPASSCODE_DESC" />
+		<action name="aameeting.edit.aameetingcontact" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACT" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACT_DESC" />
+		<action name="aameeting.view.aameetingcontact" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACT" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACT_DESC" />
+		<action name="aameeting.edit.aameetingecontactemail" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGECONTACTEMAIL" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGECONTACTEMAIL_DESC" />
+		<action name="aameeting.view.aameetingecontactemail" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGECONTACTEMAIL" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGECONTACTEMAIL_DESC" />
+		<action name="aameeting.edit.aameetingcontactphone" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACTPHONE" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_AAMEETINGCONTACTPHONE_DESC" />
+		<action name="aameeting.view.aameetingcontactphone" title="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACTPHONE" description="COM_AAMEETINGLIST_AAMEETINGS_VIEW_AAMEETINGCONTACTPHONE_DESC" />
+		<action name="aameeting.version" title="COM_AAMEETINGLIST_AAMEETINGS_EDIT_VERSION" description="COM_AAMEETINGLIST_AAMEETINGS_EDIT_VERSION_DESC" />
+	</section>
+</access>

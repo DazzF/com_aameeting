@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form
+	addrulepath="/administrator/components/com_aameetinglist/models/rules"
+	addfieldpath="/administrator/components/com_aameetinglist/models/fields"
+>
+	<fieldset name="details">
+		<!-- Default Fields. -->
+		<!-- Id Field. Type: Text (joomla) -->
+		<field
+			name="id"
+			type="text" class="readonly" label="JGLOBAL_FIELD_ID_LABEL"
+			description ="JGLOBAL_FIELD_ID_DESC" size="10" default="0"
+			readonly="true"
+		/>
+		<!-- Date Created Field. Type: Calendar (joomla) -->
+		<field
+			name="created"
+			type="calendar"
+			label="COM_AAMEETINGLIST_AAMEETING_CREATED_DATE_LABEL"
+			description="COM_AAMEETINGLIST_AAMEETING_CREATED_DATE_DESC"
+			size="22"
+			format="%Y-%m-%d %H:%M:%S"
+			filter="user_utc"
+		/>
+		<!-- User Created Field. Type: User (joomla) -->
+		<field
+			name="created_by"
+			type="user"
+			label="COM_AAMEETINGLIST_AAMEETING_CREATED_BY_LABEL"
+			description="COM_AAMEETINGLIST_AAMEETING_CREATED_BY_DESC"
+		/>
+		<!-- Published Field. Type: List (joomla) -->
+		<field name="published" type="list" label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC" class="chzn-color-state"
+			filter="intval" size="1" default="1" >
+			<option value="1">
+				JPUBLISHED</option>
+			<option value="0">
+				JUNPUBLISHED</option>
+			<option value="2">
+				JARCHIVED</option>
+			<option value="-2">
+				JTRASHED</option>
+		</field>
+		<!-- Date Modified Field. Type: Calendar (joomla) -->
+		<field name="modified" type="calendar" class="readonly"
+			label="COM_AAMEETINGLIST_AAMEETING_MODIFIED_DATE_LABEL" description="COM_AAMEETINGLIST_AAMEETING_MODIFIED_DATE_DESC"
+			size="22" readonly="true" format="%Y-%m-%d %H:%M:%S" filter="user_utc" />
+		<!-- User Modified Field. Type: User (joomla) -->
+		<field name="modified_by" type="user"
+			label="COM_AAMEETINGLIST_AAMEETING_MODIFIED_BY_LABEL"
+			description="COM_AAMEETINGLIST_AAMEETING_MODIFIED_BY_DESC"
+			class="readonly"
+			readonly="true"
+			filter="unset"
+		/>
+		<!-- Access Field. Type: Accesslevel (joomla) -->
+		<field name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			default="1"
+			required="false"
+		/>
+		<!-- Ordering Field. Type: Numbers (joomla) -->
+		<field
+			name="ordering"
+			type="number"
+			class="inputbox validate-ordering"
+			label="COM_AAMEETINGLIST_AAMEETING_ORDERING_LABEL"
+			description=""
+			default="0"
+			size="6"
+			required="false"
+		/>
+		<!-- Version Field. Type: Text (joomla) -->
+		<field
+			name="version"
+			type="text"
+			class="readonly"
+			label="COM_AAMEETINGLIST_AAMEETING_VERSION_LABEL"
+			description="COM_AAMEETINGLIST_AAMEETING_VERSION_DESC"
+			size="6"
+			readonly="true"
+			filter="unset"
+		/>
+		<!-- Metakey Field. Type: Textarea (joomla) -->
+		<field
+			name="metakey"
+			type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL"
+			description="JFIELD_META_KEYWORDS_DESC"
+			rows="3"
+			cols="30"
+		/>
+		<!-- Metadesc Field. Type: Textarea (joomla) -->
+		<field
+			name="metadesc"
+			type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL"
+			description="JFIELD_META_DESCRIPTION_DESC"
+			rows="3"
+			cols="30"
+		/>
+		<!-- Dynamic Fields. -->
+		<!-- Aameetingname Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingname"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGNAME_LABEL"
+			default="Some text"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGNAME_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="true"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGNAME_MESSAGE"
+			autocomplete="on"
+		/>
+		<!-- Aameetingtime Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingtime"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGTIME_LABEL"
+			size="5"
+			maxlength="5"
+			default="00:00"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGTIME_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="false"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGTIME_MESSAGE"
+			hint="COM_AAMEETINGLIST_AAMEETING_AAMEETINGTIME_HINT"
+			autocomplete="on"
+		/>
+		<!-- Aameetingnight Field. Type: List. (joomla) -->
+		<field
+			type="list"
+			name="aameetingnight"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGNIGHT_LABEL"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGNIGHT_DESCRIPTION"
+			class="list_class"
+			multiple="false"
+			useglobal="false"
+			default="0">
+			<!-- Option Set. -->
+			<option value="1">
+				COM_AAMEETINGLIST_AAMEETING_MONDAY</option>
+			<option value="2">
+				COM_AAMEETINGLIST_AAMEETING_TUESDAY</option>
+			<option value="3">
+				COM_AAMEETINGLIST_AAMEETING_WEDNESDAY</option>
+			<option value="4">
+				COM_AAMEETINGLIST_AAMEETING_THURSDAY</option>
+			<option value="5">
+				COM_AAMEETINGLIST_AAMEETING_FRIDAY</option>
+			<option value="6">
+				COM_AAMEETINGLIST_AAMEETING_SATURDAY</option>
+			<option value="7">
+				COM_AAMEETINGLIST_AAMEETING_SUNDAY</option>
+		</field>
+		<!-- Aameetingcode Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingcode"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCODE_LABEL"
+			size="15"
+			maxlength="50"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCODE_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="true"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCODE_MESSAGE"
+			hint="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCODE_HINT"
+			autocomplete="on"
+		/>
+		<!-- Aameetingpasscode Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingpasscode"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGPASSCODE_LABEL"
+			size="10"
+			maxlength="50"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGPASSCODE_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="true"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGPASSCODE_MESSAGE"
+			hint="COM_AAMEETINGLIST_AAMEETING_AAMEETINGPASSCODE_HINT"
+			autocomplete="on"
+		/>
+		<!-- Aameetingcontact Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingcontact"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACT_LABEL"
+			size="10"
+			maxlength="50"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACT_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="false"
+			filter="STRING"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACT_MESSAGE"
+			hint="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACT_HINT"
+			autocomplete="on"
+		/>
+		<!-- Aameetingecontactemail Field. Type: Email. (joomla) -->
+		<field
+			type="email"
+			name="aameetingecontactemail"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGECONTACTEMAIL_LABEL"
+			size="10"
+			maxlength="50"
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGECONTACTEMAIL_DESCRIPTION"
+			class="inputbox"
+			readonly="false"
+			disabled="false"
+			required="false"
+			filter="STRING"
+			validate="email"
+			unique="false"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGECONTACTEMAIL_MESSAGE"
+			hint="COM_AAMEETINGLIST_AAMEETING_AAMEETINGECONTACTEMAIL_HINT"
+			autocomplete="on"
+		/>
+		<!-- Aameetingcontactphone Field. Type: Text. (joomla) -->
+		<field
+			type="text"
+			name="aameetingcontactphone"
+			label="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACTPHONE_LABEL"
+			size="10"
+			maxlength="50"
+			default=""
+			description="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACTPHONE_DESCRIPTION"
+			class="text_area"
+			readonly="false"
+			disabled="false"
+			required="false"
+			filter="tel"
+			validated="tel"
+			message="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACTPHONE_MESSAGE"
+			hint="COM_AAMEETINGLIST_AAMEETING_AAMEETINGCONTACTPHONE_HINT"
+		/>
+	</fieldset>
+
+	<!-- Metadata Fields. -->
+	<fields name="metadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+		<fieldset name="vdmmetadata"
+			label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+			<!-- Robots Field. Type: List (joomla) -->
+			<field name="robots"
+				type="list"
+				label="JFIELD_METADATA_ROBOTS_LABEL"
+				description="JFIELD_METADATA_ROBOTS_DESC" >
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+				<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+				<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+				<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+			</field>
+			<!-- Author Field. Type: Text (joomla) -->
+			<field name="author"
+				type="text"
+				label="JAUTHOR" description="JFIELD_METADATA_AUTHOR_DESC"
+				size="20"
+			/>
+			<!-- Rights Field. Type: Textarea (joomla) -->
+			<field name="rights" type="textarea" label="JFIELD_META_RIGHTS_LABEL"
+				description="JFIELD_META_RIGHTS_DESC" required="false" filter="string"
+				cols="30" rows="2"
+			/>
+		</fieldset>
+	</fields>
+	
+	<!-- Access Control Fields. -->
+	<fieldset name="accesscontrol">
+		<!-- Asset Id Field. Type: Hidden (joomla) -->
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		<!-- Rules Field. Type: Rules (joomla) -->
+		<field
+			name="rules"
+			type="rules"
+			label="Permissions in relation to this aameeting"
+			translate_label="false"
+			filter="rules"
+			validate="rules"
+			class="inputbox"
+			component="com_aameetinglist"
+			section="aameeting"
+		/>
+	</fieldset>
+</form>
