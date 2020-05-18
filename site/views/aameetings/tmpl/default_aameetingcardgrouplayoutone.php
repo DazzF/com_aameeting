@@ -66,7 +66,7 @@ $cardgroupcounter = 0;
 						</div>
 					</div>
 					<?php $cardgroupcounter++;?>
-					<?php if ($cardgroupcounter == 3) {
+					<?php if ($cardgroupcounter == 2) {
 						$cardgroupcounter = 0;
 						$cardgrouprequired = true;?>
 						</div>
