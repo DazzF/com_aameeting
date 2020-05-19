@@ -46,7 +46,7 @@ $cardgroupcounter = 0;
 					<div class="card-deck">
 					<?php } ?>
 					<div class="card">
-						<div class="card-header" Style="height:100px;">
+						<div class="card-header" Style="height:120px;">
 						<img class="card-img-top float-left p-3" style="max-width: 70px;" src="<?php echo JURI::root(true) .'/components/com_aameetinglist/assets/images/aa-Logo-70x70-trans.png';?>" alt="Card image cap">
 							<h6 class="p-4"><?php echo $item->aameetingname; ?></h6>
 						</div>
