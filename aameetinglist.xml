@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="component" version="3.2" method="upgrade">
 	<name>COM_AAMEETINGLIST</name>
-	<creationDate>18th May, 2020</creationDate>
+	<creationDate>19th May, 2020</creationDate>
 	<author>Darren Frewin</author>
 	<authorEmail>frewind@hotmail.com</authorEmail>
 	<authorUrl>http://www.west-kent-alcoholics-anonymous.org.uk</authorUrl>

@@ -4,7 +4,7 @@
 /-------------------------------------------------------------------------------------------------------/
 
 	@version		1.0.3
-	@build			18th May, 2020
+	@build			19th May, 2020
 	@created		15th May, 2020
 	@package		AA-MeetingList
 	@subpackage		batchselection.php
